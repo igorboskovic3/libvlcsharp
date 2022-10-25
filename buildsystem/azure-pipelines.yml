@@ -28,8 +28,6 @@ stages:
     pool:
       vmImage: 'windows-2022'
     steps:
-    - bash: |
-      sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_10
     - template: windows-build.yml
 
 - stage: Test
