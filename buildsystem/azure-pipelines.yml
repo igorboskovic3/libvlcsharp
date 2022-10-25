@@ -28,7 +28,8 @@ stages:
     pool:
       vmImage: 'windows-2022'
     steps:
-    - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_10
+    - bash: |
+      sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_10
       displayName: 'Select Xamarin SDK version'
     - template: windows-build.yml
 
