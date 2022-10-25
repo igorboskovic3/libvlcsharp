@@ -30,7 +30,7 @@ stages:
     steps:
     - bash: |
       sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_10
-      displayName: 'Select Xamarin SDK version'
+      echo "Select Xamarin SDK version"
     - template: windows-build.yml
 
 - stage: Test
