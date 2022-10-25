@@ -42,7 +42,7 @@ stages:
       pool:
         vmImage: 'windows-latest'
       steps:
-        - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 5_4_1
+        - script: sudo $AGENT_HOMEDIRECTORY/scripts/select-xamarin-sdk.sh 6_12_10
           displayName: 'Select Xamarin SDK version'
         - template: base-template.yml
         - task: UseDotNet@2
